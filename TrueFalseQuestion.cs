@@ -9,11 +9,10 @@ namespace Exam02
     internal class TrueFalseQuestion : Question
     {
         #region Constructors
-        public TrueFalseQuestion(string body, int mark, Answer rightAnswer)
-        : base("True/False", body, mark,
-              new Answer[] { new Answer(1, "True"), new Answer(2, "False") },
-              rightAnswer)
-        { }
+        public TrueFalseQuestion(string body, int mark, Answer rightAnswer): base("True/False", body, mark,new Answer[] { new Answer(1, "True"), new Answer(2, "False") },rightAnswer)
+        { 
+        
+        }
         #endregion
 
         #region Methods

@@ -33,13 +33,13 @@
             for (int i = 0; i < numberOfQuestions; i++)
             {
                 Console.WriteLine("Please Enter the Type of Question (1 for MCQ | 2 For True | False)");
-                int.TryParse(Console.ReadLine(), out int qType);
+                int.TryParse(Console.ReadLine(), out int questionType);
                 Console.Clear();
                 Console.WriteLine("=====================================================");
                 Console.WriteLine("==================Examination System=================");
                 Console.WriteLine("=====================================================\n");
                 // ====MCQ====
-                if (qType == 1)
+                if (questionType == 1)
                 {
                     Console.WriteLine("MCQ Question");
                     Console.WriteLine("Please Enter Question Body");

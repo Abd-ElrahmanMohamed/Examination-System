@@ -9,12 +9,12 @@ namespace Exam02
 {
     internal class MCQQuestion : Question
     {
-        public MCQQuestion(string body, int mark, Answer[] answers, Answer rightAnswer)
-         : base("MCQ", body, mark, answers, rightAnswer)
-        { }
+
         #region Constructors
+        public MCQQuestion(string body, int mark, Answer[] answers, Answer rightAnswer) : base("MCQ", body, mark, answers, rightAnswer)
+        {
 
-
+        }
         #endregion
 
         #region Methods

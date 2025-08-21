@@ -14,7 +14,7 @@ namespace Exam02
         public int Mark { get; set; }
         public Answer[] AnswerList { get; set; }
         public Answer? RightAnswer { get; set; }
-        public Answer UserAnswer { get; set; }
+        public Answer? UserAnswer { get; set; } 
         #endregion
 
         #region Constructor

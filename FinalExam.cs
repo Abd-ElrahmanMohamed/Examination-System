@@ -10,8 +10,7 @@ namespace Exam02
     internal class FinalExam : Exam
     {
         #region Constructors
-        public FinalExam(int Time, int NumberOfQuestions, Question[] Questions)
-       : base(Time, NumberOfQuestions, Questions)
+        public FinalExam(int Time, int NumberOfQuestions, Question[] Questions): base(Time, NumberOfQuestions, Questions)
         {
 
         }
@@ -22,7 +21,7 @@ namespace Exam02
         {
             Console.WriteLine("=== Final Exam ===");
             int totalMark = 0;
-            var sw = Stopwatch.StartNew();
+            var stopWatch = Stopwatch.StartNew();
             if (Questions is not null)
             {
                 foreach (var q in Questions)
@@ -35,7 +34,7 @@ namespace Exam02
                         totalMark += q.Mark;
                 }
             }
-            sw.Stop();
+            stopWatch.Stop();
             Console.Clear();
             Console.WriteLine("=====================================================");
             Console.WriteLine("==================Examination System=================");
@@ -46,13 +45,13 @@ namespace Exam02
                 foreach (var q in Questions)
                 {
                     Console.WriteLine($"Question {i} : {q.Body}");
-                    Console.WriteLine($"Your Answer => {q.UserAnswer.AnswerText}");
+                    Console.WriteLine($"Your Answer => {q.UserAnswer?.AnswerText}");
                     Console.WriteLine($"Right Answer => {q.RightAnswer?.AnswerText}\n");
                     i++;
                 }
             }
             Console.WriteLine($"Your Grade is {totalMark} from {Questions?.Sum(q => q.Mark)}");
-            Console.WriteLine($"Time = {sw.Elapsed}");
+            Console.WriteLine($"Time = {stopWatch.Elapsed}");
             Console.WriteLine("Thank you");
         }
         #endregion
