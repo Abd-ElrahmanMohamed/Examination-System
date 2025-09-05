@@ -4,12 +4,18 @@
 Key Features:
 <br><br>
 Choose between Practical or Final Exam
+<br>
 Set exam duration & number of questions
+  <br>
 Configure True/False or Multiple Choice questions
+  <br>
 Each question includes body, grade, and correct answer
-Users can take configured exams:
+  <br>
+Users can take configured exams :
 <br><br>
 Questions displayed sequentially
+  <br>
 User answers recorded & compared to correct ones
+  <br>
 Exam duration & total marks displayed at end.
 <H2/>
